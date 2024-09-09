@@ -1,5 +1,5 @@
 import { Locale } from '.'
-import { Themes } from '../../types/theme'
+import { Themes } from '../../core/types/theme'
 
 export type ThemeName = 'hills' | 'mosaic' | 'village' | 'desert'
 
@@ -54,3 +54,5 @@ export const themeTranslations: Record<Locale, Record<AvatarName | ThemeName, st
     desert: 'desert',
   },
 }
+
+export const wheelRingThemes = []
