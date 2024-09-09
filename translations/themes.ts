@@ -63,7 +63,7 @@ export const themeTranslations: Record<Locale, Record<AvatarName | ThemeName, st
   },
 }
 
-export const wheelRingThemes = []
+export const wheelRingThemes: ThemeName[] = []
 
 export const IconForTheme: Record<ThemeName, Record<Appearance, React.FC<SvgIconProps>>> = {
   hills: {
