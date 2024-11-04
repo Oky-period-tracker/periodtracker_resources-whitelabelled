@@ -1,5 +1,5 @@
 // THIS FILE IS AUTO GENERATED. DO NOT EDIT MANUALLY
-import { StaticContent } from '../../../types'
+import { StaticContent } from '../../../core/types'
 
 export const en: StaticContent = {
   locale: 'en',
@@ -5784,7 +5784,35 @@ export const en: StaticContent = {
       '1b004535-7e58-4319-a296-79a4d252df3e',
     ],
   },
-  helpCenters: [],
+  helpCenters: [
+    {
+      id: 5,
+      title: 'NSPCC / Childline UK',
+      caption: 'If you need to speak to a counsellor in the UK',
+      contactOne: '0800 1111',
+      contactTwo: '',
+      address: '',
+      website: 'www.childline.org.uk',
+      region: 'GB',
+      subRegion: '',
+      lang: 'en',
+      isAvailableNationwide: true,
+      primaryAttributeId: 43,
+      otherAttributes: '46,48',
+      isActive: true,
+      sortingKey: 1,
+    },
+  ],
+  helpCenterAttributes: [
+    { id: 41, name: 'Pharmacy', emoji: '💊', isActive: true, lang: 'en' },
+    { id: 42, name: 'Health Center', emoji: '🏥', isActive: true, lang: 'en' },
+    { id: 43, name: 'Youth Center', emoji: '👫', isActive: true, lang: 'en' },
+    { id: 44, name: 'GBV support', emoji: '📣', isActive: true, lang: 'en' },
+    { id: 45, name: 'Police Desk', emoji: '👮🏼‍', isActive: true, lang: 'en' },
+    { id: 46, name: 'Hotline', emoji: '🚨', isActive: true, lang: 'en' },
+    { id: 47, name: 'Call/Chat Support', emoji: '💬', isActive: true, lang: 'en' },
+    { id: 48, name: 'With Free Services', emoji: '🤗', isActive: true, lang: 'en' },
+  ],
   avatarMessages: [
     {
       id: '91115615-d97f-41a1-8508-02b992482e15',
