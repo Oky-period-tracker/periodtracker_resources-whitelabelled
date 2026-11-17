@@ -1,4 +1,4 @@
-import { AppTranslations } from '../../../types'
+import { AppTranslations } from '../../../core/types'
 import { Locale } from '../'
 
 import { en } from './en'

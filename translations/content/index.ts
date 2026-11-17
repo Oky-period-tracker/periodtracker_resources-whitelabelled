@@ -1,4 +1,4 @@
-import { StaticContent } from '../../../types'
+import { StaticContent } from '../../../core/types'
 import { Locale } from '../'
 import { en } from './en'
 
