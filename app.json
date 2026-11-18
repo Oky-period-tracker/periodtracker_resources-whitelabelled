@@ -18,7 +18,8 @@
       "googleServicesFile": "./src/resources/GoogleService-Info.plist",
       "deploymentTarget": "12.0",
       "infoPlist": {
-        "UIBackgroundModes": ["fetch", "remote-notification"]
+        "UIBackgroundModes": ["fetch", "remote-notification"],
+        "ITSAppUsesNonExemptEncryption": false
       },
       "entitlements": {
         "aps-environment": "production"
@@ -32,7 +33,8 @@
       "permissions": ["INTERNET"]
     },
     "web": {
-      "favicon": "./src/resources/assets/app/favicon.png"
+      "favicon": "./src/resources/assets/app/favicon.png",
+      "bundler": "metro"
     },
     "extra": {
       "eas": {
@@ -44,9 +46,13 @@
         "expo-build-properties",
         {
           "android": {
-            "useLegacyPackaging": true,
+            "minSdkVersion": 24,
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "useLegacyPackaging": false,
             "enableShrinkResourcesInReleaseBuilds": true,
             "enableProguardInReleaseBuilds": true,
+            "extraProguardRules": "# expo-notifications saves scheduled reminders with its own serialization code, which the shrinker otherwise strips\n-keep class expo.modules.notifications.** { *; }",
             "manifest": {
               "application": {
                 "meta-data": [
@@ -63,6 +69,9 @@
                 ]
               }
             }
+          },
+          "ios": {
+            "useFrameworks": "static"
           }
         }
       ],
@@ -70,11 +79,10 @@
       "@react-native-firebase/crashlytics",
       "expo-localization",
       [
-        "expo-build-properties",
+        "expo-notifications",
         {
-          "ios": {
-            "useFrameworks": "static"
-          }
+          "icon": "./src/resources/assets/app/notification-icon.png",
+          "color": "#E93080"
         }
       ]
     ]

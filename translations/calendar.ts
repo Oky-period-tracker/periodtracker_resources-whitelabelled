@@ -1,5 +1,5 @@
 import { Locale } from '.'
-import { CalendarTranslations } from '../../types/translations/calendar'
+import { CalendarTranslations } from '../../core/types'
 
 export const calendarTranslations: Record<Locale, CalendarTranslations> = {
   en: {
@@ -31,15 +31,7 @@ export const calendarTranslations: Record<Locale, CalendarTranslations> = {
       'Nov',
       'Dec',
     ],
-    dayNames: [
-      'Sunday',
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-    ],
+    dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     dayNamesShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'],
   },
 }
